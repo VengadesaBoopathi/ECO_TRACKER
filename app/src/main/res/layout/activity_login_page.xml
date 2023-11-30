@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="enter your email" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailInput"
+        android:layout_centerInParent="true"
+        android:text="enter your password" />
+
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="/abc@gmail.com"/>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="password"/>
+
+    <Button
+        android:id="@+id/loginsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInput"
+        android:layout_centerInParent="true"
+        android:onClick="openCarbon"
+        android:text="submit" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textSize="@dimen/material_emphasis_medium"
+        android:textSize
+        />
+</RelativeLayout>
